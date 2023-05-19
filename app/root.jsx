@@ -43,7 +43,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Hellosasasa, {name} {page.title}</h1>
+        <h1>Hellogfg, {name} </h1>
         <p>This is a custom storefront powered by Hydrogen</p>
         <Outlet />
         <ScrollRestoration />
