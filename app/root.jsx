@@ -29,26 +29,10 @@ export async function loader({context}) {
   return {layout};
 }
 
-export default function Page() {
-  const {page} = useLoaderData();
-
-  return (
-    <>
-      <PageHeader heading={page.title}>
-        <div
-          dangerouslySetInnerHTML={{__html: page.body}}
-          className="prose dark:prose-invert"
-        />
-      </PageHeader>
-    </>
-  );
-}
-
 export default function App() {
   const data = useLoaderData();
 
   const {name} = data.layout.shop;
-  
 
   return (
     <html lang="en">
@@ -59,7 +43,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Hello, {name} </h1>
+        <h1>Hello, {name}</h1>
         <p>This is a custom storefront powered by Hydrogen</p>
         <Outlet />
         <ScrollRestoration />
