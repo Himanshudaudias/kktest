@@ -43,9 +43,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-     
-          {children}
-        
         <h1>Hello, {name}</h1>
         <p>This is a custom storefront powered by Hydrogen</p>
         <Outlet />
